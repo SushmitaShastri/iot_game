@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>IOT Gamification</title>
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<meta http-equiv='pragma' content='no-cache'>
+	<script type="application/x-javascript">
+	//document.addEventListener('contextmenu', event => event.preventDefault());
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+		caches.open(id)
+		.then(cache => cache.keys()
+		  .then(keys => {
+		    for (let key of keys) {
+		      cache.delete(key)
+		    }
+		  }));
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+		
+		function submitData(type,ans)
+		{
+			if(type==11)
+			{
+				if(ans.toLowerCase()=="actuator")
+				{
+					document.getElementById('resultError11').innerHTML='';
+					document.getElementById('result11').innerHTML="Exactly!Proceed to the next game!";
+					document.getElementById("btn11").classList.remove("disabled");
+					document.getElementById("div1").classList.remove("disabled");
+					document.getElementById("btn11").disabled = false;
+					
+				}
+				else
+				{
+					document.getElementById('result11').innerHTML='';
+					document.getElementById('resultError11').innerHTML="Sorry!Try again!";
+				}
+			}
+			else if(type==12)
+			{
+				if(ans.toLowerCase()=="sensor")
+				{
+					document.getElementById('resultError12').innerHTML='';
+					document.getElementById('result12').innerHTML="Exactly!Proceed to the next game!";
+					document.getElementById("btn12").classList.remove("disabled");
+					document.getElementById("div2").classList.remove("disabled");
+					document.getElementById("btn12").disabled = false;
+				}
+				else
+				{
+					document.getElementById('result12').innerHTML='';
+					document.getElementById('resultError12').innerHTML="Sorry!Try again!";
+				}
+			}
+			else if(type==13)
+			{
+				if(ans.toLowerCase()=="b")
+				{
+					document.getElementById('resultError13').innerHTML='';
+					document.getElementById('result13').innerHTML="Correct!Proceed to the next game!";
+					document.getElementById("btn13").classList.remove("disabled");
+					document.getElementById("div3").classList.remove("disabled");
+					document.getElementById("btn13").disabled = false;
+				}
+				else
+				{
+					document.getElementById('result13').innerHTML='';
+					document.getElementById('resultError13').innerHTML="Sorry!Try again!";
+				}
+			}
+			else if(type==14)
+			{
+				if(ans.toLowerCase()=="nodemcu")
+				{
+					document.getElementById('resultError14').innerHTML='';
+					document.getElementById('result14').innerHTML="Correct!Proceed to the next game!";
+					document.getElementById("btn14").classList.remove("disabled");
+					document.getElementById("div4").classList.remove("disabled");
+					document.getElementById("btn14").disabled = false;
+				}
+				else
+				{
+					document.getElementById('result14').innerHTML='';
+					document.getElementById('resultError14').innerHTML="Sorry!Try again!";
+				}
+			}
+			else if(type==15)
+			{
+				if(ans=="58GPIO16" || ans=="58gpio16")
+				{
+					document.getElementById('resultError15').innerHTML='';
+					document.getElementById('result15').innerHTML="Correct!Proceed to the next game!";
+					document.getElementById("btn21").classList.remove("disabled");
+					document.getElementById("div21").classList.remove("disabled");
+					document.getElementById("btn21").disabled = false;
+				}
+				else
+				{
+					document.getElementById('result15').innerHTML='';
+					document.getElementById('resultError15').innerHTML="Sorry!Try again!";
+				}
+			}
+			else if(type==21)
+			{
+				if(ans=="10")
+				{
+					document.getElementById('resultError21').innerHTML='';
+					document.getElementById('result21').innerHTML="Correct!Proceed to the next game!";
+					document.getElementById("btn22").classList.remove("disabled");
+					document.getElementById("div22").classList.remove("disabled");
+					document.getElementById("btn22").disabled = false;
+				}
+				else
+				{
+					document.getElementById('result21').innerHTML='';
+					document.getElementById('resultError21').innerHTML="Sorry!Try again!";
+				}
+			}
+			else if(type==22)
+			{
+				if(ans=="ultrasonic")
+				{
+					document.getElementById('resultError22').innerHTML='';
+					document.getElementById('result22').innerHTML="Correct!!";
+					
+					let fileUltr = document.getElementById("l2g2b").value;
+					if(fileUltr=="ocinsartlu")
+					{
+						document.getElementById('resultError22').innerHTML='';
+						document.getElementById('result22').innerHTML="Correct!!";
+							
+						document.getElementById("btn23").classList.remove("disabled");
+						document.getElementById("div23").classList.remove("disabled");
+						document.getElementById("btn23").disabled = false;
+					}
+					else
+					{
+						document.getElementById('result22').innerHTML='';
+						document.getElementById('resultError22').innerHTML="Sorry!Try again!";
+					}
+					
+				}
+				else
+				{
+					document.getElementById('result22').innerHTML='';
+					document.getElementById('resultError22').innerHTML="Sorry!Try again!";
+				}
+			}
+			else if(type==23)
+			{
+				if(ans.toLowerCase()=="ldr")
+				{
+					document.getElementById('resultError23').innerHTML='';
+					document.getElementById('result23').innerHTML="Correct!Now try geussing below";
+
+					document.getElementById("btn24").classList.remove("disabled");
+					document.getElementById("div24").classList.remove("disabled");
+					document.getElementById("btn24").disabled = false;
+				}
+				else
+				{
+					document.getElementById('result23').innerHTML='';
+					document.getElementById('resultError23').innerHTML="Sorry!Try again!";
+				}
+			}
+			else if(type==24)
+			{
+				if(ans.toLowerCase()=="ir")
+				{
+					document.getElementById('resultError24').innerHTML='';
+					document.getElementById('result24').innerHTML="Correct!Proceed to the next game!";
+					document.getElementById("btn25").classList.remove("disabled");
+					document.getElementById("div25").classList.remove("disabled");
+					document.getElementById("btn25").disabled = false;
+				}
+				else
+				{
+					document.getElementById('result24').innerHTML='';
+					document.getElementById('resultError24').innerHTML="Sorry!Try again!";
+				}
+			}
+			else if(type==25)
+			{
+				if(ans.toLowerCase()=="oled")
+				{
+					document.getElementById('resultError25').innerHTML='';
+					document.getElementById('result25').innerHTML="Correct!Proceed to the next game!";
+					document.getElementById("btn31").classList.remove("disabled");
+					document.getElementById("div31").classList.remove("disabled");
+					document.getElementById("btn31").disabled = false;
+				}
+				else
+				{
+					document.getElementById('result25').innerHTML='';
+					document.getElementById('resultError25').innerHTML="Sorry!Try again!";
+				}
+			}
+			else if(type==31)
+			{
+				if(ans.toLowerCase()=="yes")
+				{
+					document.getElementById('resultError31').innerHTML='';
+					document.getElementById('result31').innerHTML="You're almost there!";
+					document.getElementById("btn32").classList.remove("disabled");
+					document.getElementById("div32").classList.remove("disabled");
+					document.getElementById("btn32").disabled = false;
+				}
+				else
+				{
+					document.getElementById('result31').innerHTML='';
+					document.getElementById('resultError31').innerHTML="No problem!You can learn and come back anytime!";
+				}
+			}
+			else if(type==32)
+			{
+				if(ans.toLowerCase()=="yes")
+				{
+					document.getElementById('resultError32').innerHTML='';
+					document.getElementById('result32').innerHTML="Hurray! You did it!<br>You've succesfully completed the game! Continue to play with IoT! Byee!";
+				}
+				else
+				{
+					document.getElementById('result32').innerHTML='';
+					document.getElementById('resultError32').innerHTML="No problem!You can learn and come back anytime!";
+				}
+			}
+		}
+	</script>
+	<style>
+	.overtext
+	{
+		border:0px;
+	}
+	.disabled
+	{
+		cursor: not-allowed !important;
+	}
+	</style>
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- gallery -->
+	<link rel="stylesheet" href="css/lightGallery.css" type="text/css" media="all" />
+	<!-- //gallery -->
+	<!-- font-awesome icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+
+	<!-- //font-awesome icons -->
+	<link href="//fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Jura:300,400,500,600" rel="stylesheet">
+	<link
+		href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+		rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+	<!-- modals for game -->
+<!-- Modal1 -->
+<div id="l1game1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Level1 - game1</h4>
+      </div>
+      <div class="modal-body">
+      	 <span style="color:green" id="result11"></span>
+      	 <span style="color:red" id="resultError11"></span>
+        <p><b>Device that converts energy into motion ________</b></p><br>
+        <input type="text" name="l1g1" id="l1g1">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-success" onclick="submitData(11,document.getElementById('l1g1').value)">Submit</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal1 -->
+<!-- Modal12 -->
+<div id="l1game2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Level1 - game2</h4>
+      </div>
+      <div class="modal-body">
+      	 <span style="color:green" id="result12"></span>
+      	 <span style="color:red" id="resultError12"></span>
+        <p><b>An ac is capable of turning on by itself when it's a hot day, it
+is using temperature ______.</b></p><br>
+        <input type="text" name="l1g2" id="l1g2">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-success" onclick="submitData(12,document.getElementById('l1g2').value)">Submit</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal12 -->
+<!-- Modal13 -->
+<div id="l1game3" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Level1 - game4</h4>
+      </div>
+      <div class="modal-body">
+      	 <span style="color:green" id="result13"></span>
+      	 <span style="color:red" id="resultError13"></span>
+        <p><b>Which of the following is not an development board:
+	a. Arduino<br>
+	b. LDR<br>
+	c. Nodemcu<br>
+	d. Raspberry pi</b></p><br>
+	Input any of the option name (a,b,c or d)
+        <input type="text" name="l1g3" id="l1g3">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-success" onclick="submitData(13,document.getElementById('l1g3').value)">Submit</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal13 -->
+<!-- Modal14 -->
+<div id="l1game4" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Level1 - game4</h4>
+      </div>
+      <div class="modal-body">
+      	 <span style="color:green" id="result14"></span>
+      	 <span style="color:red" id="resultError14"></span>
+        <p><b>Which development board needs wifi to run?
+        <input type="text" name="l1g4" id="l1g4">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-success" onclick="submitData(14,document.getElementById('l1g4').value)">Submit</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal14 -->
+<!-- Modal14 -->
+<div id="l1game5" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Level1 - game5</h4>
+      </div>
+      <div class="modal-body">
+      	 <span style="color:green" id="result15"></span>
+      	 <span style="color:red" id="resultError15"></span>
+        <p><b>Guess the answer to enter the next level:
+Format: Number of analog pins in arduino+ Number of ground pins in raspberry + name of last GPIO pin(which has maximum gpio number) in NodeMCU ESP8266.</b></p><br>
+        <input type="text" name="l1g5" id="l1g5">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-success" onclick="submitData(15,document.getElementById('l1g5').value)">Submit</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal14 -->
+<!-- end of modals -->
+
+<!-- level2 -->
+<!--game1 -->
+<div id="l1game21" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Level2 - game1</h4>
+      </div>
+      <div class="modal-body">
+      	 <span style="color:green" id="result21"></span>
+      	 <span style="color:red" id="resultError21"></span>
+        <p><b>Turn on the given led using any of your favorite development board.
+Blink the led with 1000ms delay. Count the number of blinks and enter.</b></p><br>
+        <input type="text" name="l2g1" id="l2g1">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-success" onclick="submitData(21,document.getElementById('l2g1').value)">Submit</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end game2 -->
+<!--game1 -->
+<div id="l1game22" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Level2 - game2</h4>
+      </div>
+      <div class="modal-body">
+      	 <span style="color:green" id="result22"></span>
+      	 <span style="color:red" id="resultError22"></span>
+        <p><b>Well, welll, well.. Good job! Let's see how much you've got ;)
+Let's work on some sensor, shall we? 
+Suppose we've to design a car which stops when some other object is very close to it. What that sensor would be?</b></p><br>
+        <input type="text" name="l2g2" id="l2g2"><br>
+        Reverse the answer you've got, you'll find a file with the same name.
+Open the file, run the code with same pin configuration.
+When object is detected within mentioned distance which led is glowing?
+	<input type="text" name="l2g2b" id="l2g2b"><br>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-success" onclick="submitData(22,document.getElementById('l2g2').value)">Submit</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end game2 -->
+<!--game3 -->
+<div id="l1game23" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Level2 - game3</h4>
+      </div>
+      <div class="modal-body">
+      	 <span style="color:green" id="result23"></span>
+      	 <span style="color:red" id="resultError23"></span>
+        <p><b> Wooh! You're smarter that I imagined! Let's take it to little higher level.
+If you want to build a smart city smart like you, to save electricity with the street lights which turn on when it's evening and off in the morning, which sensor would you use?</b></p><br>
+        <input type="text" name="l2g3" id="l2g3"><br>
+        <b>Yo! Now take the next alphabet of each letters to know the file name.
+        Do the connection and run the code.<br>
+But, OOPS! Street lamps code is not there! Can you add it pls?</b>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-success" onclick="submitData(23,document.getElementById('l2g3').value)">Submit</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end game3 -->
+<!--game4-->
+<div id="l1game24" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Level2 - game4</h4>
+      </div>
+      <div class="modal-body">
+      	 <span style="color:green" id="result24"></span>
+      	 <span style="color:red" id="resultError24"></span>
+        <p><b>You saved a lot of electricity! Now let's save money and lives.
+ You want to prevent robbery especially during the night. This sensor
+ uses radioation to detect someone's presence within specified distance. Check for the file with the country name beginning with the
+ sensor name.</b></p><br>
+        <input type="text" name="l2g4" id="l2g4">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-success" onclick="submitData(24,document.getElementById('l2g4').value)">Submit</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end game4 -->
+<!--game5-->
+<div id="l1game25" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Level2 - game5</h4>
+      </div>
+      <div class="modal-body">
+      	 <span style="color:green" id="result25"></span>
+      	 <span style="color:red" id="resultError25"></span>
+        <p><b>You are so close to build the smart city! You should be elected as president!
+ I've something to tell you.. You can read it in the display, file name would be same as the device name.</b></p><br>
+        <input type="text" name="l2g5" id="l2g5">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-success" onclick="submitData(25,document.getElementById('l2g5').value)">Submit</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end game5 -->
+<!-- end of modals , level2 -->
+<!-- level3 -->
+<!--game1-->
+<div id="l1game31" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Level3 - game1</h4>
+      </div>
+      <div class="modal-body">
+      	 <span style="color:green" id="result31"></span>
+      	 <span style="color:red" id="resultError31"></span>
+        <p><b>Build a system with potentiometer and led, intensity of LED should vary based on the input by potentiometer.<br>
+        Could you complete?</b></p><br>
+        <input type="text" name="l3g1" id="l3g1">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-success" onclick="submitData(31,document.getElementById('l3g1').value)">Submit</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end game1 -->
+<!--game2-->
+<div id="l1game32" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Level3 - game2</h4>
+      </div>
+      <div class="modal-body">
+      	 <span style="color:green" id="result32"></span>
+      	 <span style="color:red" id="resultError32"></span>
+        <p><b>Build a system with combination of button and servometer. When button is pressed servometer should turn on and visa versa.</b><br>Could you complete?</p><br>
+        <input type="text" name="l3g2" id="l3g2">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-success" onclick="submitData(32,document.getElementById('l3g2').value)">Submit</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end game2 -->
+<!-- end of modals, level3 -->
+	<!-- banner -->
+	<div class="banner">
+		<!--Slider-->
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="slider-img">
+							<img src="images/banner1.jpg" class="img-responsive" alt="Gaming Wonderland">
+						</div>
+						<div class="slider-info">
+							<h4>IOT Gamification </h4>
+							<p>Play With Components </p>
+							<a href="#about" class="hvr-shutter-in-horizontal scroll">Ready to Play</a>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img">
+							<img src="images/banner2.jpg" class="img-responsive" alt="Gaming Wonderland">
+						</div>
+						<div class="slider-info">
+
+							<h4>IOT Gamification</h4>
+							<p>Beginning of Machine Taking Over the World </p>
+							<a href="#about" class="hvr-shutter-in-horizontal scroll">Ready to Play</a>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img">
+							<img src="images/banner3.jpg" class="img-responsive" alt="Gaming Wonderland">
+						</div>
+						<div class="slider-info">
+
+							<h4>IOT Gamification</h4>
+							<p>Learning is Fun</p>
+							<a href="#about" class="hvr-shutter-in-horizontal scroll">Ready to Play</a>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!--//Slider-->
+	</div>
+
+	<!-- about -->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="col-md-4 agileits_about_left">
+				<h3 class="w3l_head">About IOT</h3>
+			</div>
+			<div class="agileits_banner_bottom_grids">
+				<div class="col-md-6 agileits_banner_bottom_grid_l">
+					<h4>What is IoT and Why we need IoT?</h4>
+					<p><i>Internet of Things (IoT) makes our world as possible as connected together. Nowadays we almost have internet infrastructure wherever and we can use it whenever. Embedded computing devices would be exposed to internet influence. Common instances for embedded computing devices are MP3 players, MRI, traffic lights, microwave ovens, washing machines and dishwashers, GPS even heart monitoring implants or biochip and etc.
+					<a href="https://www.codeproject.com/Articles/833251/What-is-IoT-and-Why-we-need-IoT">Read More!</a>
+					</p>
+				</div>
+				<div class="col-md-6 agileits_banner_bottom_grid_r">
+					<div class="agileits_banner_btm_grid_r">
+						<img src="images/banner4.jpg" alt=" " class="img-responsive">
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- services -->
+	<div class="services" id="services">
+		<h3 class="w3l_head w3l_head1">Level</h3>
+		<p class="w3ls_head_para w3ls_head_para1"><b>There are 3 Levels</b></p>
+		<div class="services-agile-w3l">
+			<div class="col-md-4 services-gd text-center">
+				<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+					<a href="#subwork1" class="hi-icon"><img src="images/s1.png" alt=" " /></a>
+				</div>
+				<h4><a href="#subwork1">Easy Level</a></h4>
+			</div>
+
+			<div class="col-md-4 services-gd text-center">
+				<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+					<a href="#subwork2" class="hi-icon"><img src="images/s2.png" alt=" " /></a>
+				</div>
+				<h4><a href="#subwork2">Medium Level</a></h4>
+			</div>
+			<div class="col-md-4 services-gd text-center">
+				<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+					<a href="#subwork3" class="hi-icon"><img src="images/s3.png" alt=" " /></a>
+				</div>
+				<h4><a href="#subwork3">Difficult Level</a></h4>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--sub level 1 desc-->
+	<div class="team-bottom" id="subwork1">
+		<div class="container">
+			<h3 class="w3l_head w3l_head1">Level One</h3>
+			<p class="w3ls_head_para w3ls_head_para1">There are five games</p>
+			<div class="w3layouts_gallery_grids">
+				<ul class="w3l_gallery_grid" id="lightGallery">
+					<li>
+						<div class="w3layouts_gallery_grid1 box">
+							<a href="#banner">
+								<img src="images/banner1.jpg" alt=" " class="img-responsive" />
+								<div class="overbox">
+									<button id="btn10" class="title overtext" data-toggle="modal" data-target="#l1game1"> Game 1</button>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="Games"  data-src="images/g1.jpg"
+						data-responsive-src="images/g1.jpg">
+						<div class="w3layouts_gallery_grid1 box">
+							<a href="#">
+								<img src="images/banner2.jpg" alt=" " class="img-responsive" />
+								<div  id="div1" class="overbox disabled">
+									<button id="btn11" disabled class="title overtext disabled" data-toggle="modal" data-target="#l1game2"> Game 2</button>
+
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="Games"  data-src="images/g1.jpg"
+						data-responsive-src="images/g1.jpg">
+						<div class="w3layouts_gallery_grid1 box">
+							<a href="#">
+								<img src="images/banner2.jpg" alt=" " class="img-responsive" />
+								<div  id="div2" class="overbox disabled">
+									<button id="btn12" disabled class="title overtext disabled" data-toggle="modal" data-target="#l1game3"> Game 3</button>
+
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="Games"  data-src="images/g1.jpg"
+						data-responsive-src="images/g1.jpg">
+						<div class="w3layouts_gallery_grid1 box">
+							<a href="#">
+								<img src="images/banner2.jpg" alt=" " class="img-responsive" />
+								<div  id="div3" class="overbox disabled">
+									<button id="btn13" disabled class="title overtext disabled" data-toggle="modal" data-target="#l1game4"> Game 4</button>
+
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="Games"  data-src="images/g1.jpg"
+						data-responsive-src="images/g1.jpg">
+						<div class="w3layouts_gallery_grid1 box">
+							<a href="#">
+								<img src="images/banner2.jpg" alt=" " class="img-responsive" />
+								<div  id="div4" class="overbox disabled">
+									<button id="btn14" disabled class="title overtext disabled" data-toggle="modal" data-target="#l1game5"> Game 5</button>
+
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--sub level 2 desc-->
+	<div class="team-bottom" id="subwork2">
+		<div class="container">
+			<h3 class="w3l_head w3l_head1">Level Two</h3>
+			<p class="w3ls_head_para w3ls_head_para1">There are five games</p>
+			<div class="w3layouts_gallery_grids">
+				<ul class="w3l_gallery_grid" id="lightGallery">
+					<li data-title="Games"  data-src="images/g1.jpg"
+						data-responsive-src="images/g1.jpg">
+						<div class="w3layouts_gallery_grid1 box">
+							<a href="#">
+								<img src="images/banner2.jpg" alt=" " class="img-responsive" />
+								<div  id="div21" class="overbox disabled">
+									<button id="btn21" disabled class="title overtext disabled" data-toggle="modal" data-target="#l1game21"> Game 1</button>
+
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="Games"  data-src="images/g1.jpg"
+						data-responsive-src="images/g1.jpg">
+						<div class="w3layouts_gallery_grid1 box">
+							<a href="#">
+								<img src="images/banner2.jpg" alt=" " class="img-responsive" />
+								<div  id="div22" class="overbox disabled">
+									<button id="btn22" disabled class="title overtext disabled" data-toggle="modal" data-target="#l1game22"> Game 2</button>
+
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="Games"  data-src="images/g1.jpg"
+						data-responsive-src="images/g1.jpg">
+						<div class="w3layouts_gallery_grid1 box">
+							<a href="#">
+								<img src="images/banner2.jpg" alt=" " class="img-responsive" />
+								<div  id="div23" class="overbox disabled">
+									<button id="btn23" disabled class="title overtext disabled" data-toggle="modal" data-target="#l1game23"> Game 3</button>
+
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="Games"  data-src="images/g1.jpg"
+						data-responsive-src="images/g1.jpg">
+						<div class="w3layouts_gallery_grid1 box">
+							<a href="#">
+								<img src="images/banner2.jpg" alt=" " class="img-responsive" />
+								<div  id="div24" class="overbox disabled">
+									<button id="btn24" disabled class="title overtext disabled" data-toggle="modal" data-target="#l1game24"> Game 4</button>
+
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="Games"  data-src="images/g1.jpg"
+						data-responsive-src="images/g1.jpg">
+						<div class="w3layouts_gallery_grid1 box">
+							<a href="#">
+								<img src="images/banner2.jpg" alt=" " class="img-responsive" />
+								<div  id="div25" class="overbox disabled">
+									<button id="btn25" disabled class="title overtext disabled" data-toggle="modal" data-target="#l1game25"> Game 5</button>
+
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--sub level 3 desc-->
+	<div class="team-bottom" id="subwork3">
+		<div class="container">
+			<h3 class="w3l_head w3l_head1">Level Three</h3>
+			<p class="w3ls_head_para w3ls_head_para1">There are two tasks</p>
+			<div class="w3layouts_gallery_grids">
+				<ul class="w3l_gallery_grid" id="lightGallery">
+					<li data-title="Games"  data-src="images/g1.jpg"
+						data-responsive-src="images/g1.jpg">
+						<div class="w3layouts_gallery_grid1 box">
+							<a href="#">
+								<img src="images/banner2.jpg" alt=" " class="img-responsive" />
+								<div  id="div31" class="overbox disabled">
+									<button id="btn31" disabled class="title overtext disabled" data-toggle="modal" data-target="#l1game31"> Game 1</button>
+
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="Games"  data-src="images/g1.jpg"
+						data-responsive-src="images/g1.jpg">
+						<div class="w3layouts_gallery_grid1 box">
+							<a href="#">
+								<img src="images/banner2.jpg" alt=" " class="img-responsive" />
+								<div  id="div32" class="overbox disabled">
+									<button id="btn32" disabled class="title overtext disabled" data-toggle="modal" data-target="#l1game32"> Game 2</button>
+
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="w3l_footer">
+		<div class="w3l_footer_pos">
+			<p>IOT Gamification | Image Credit to Google | Design by MCA Students of RV College of Engineering Bengaluru </p>
+		</div>
+	</div>
+	<!-- //footer -->
+
+	<!--banner Slider starts Here-->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider3").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+	<!-- js -->
+	<!-- start-smoth-scrolling -->
+	<script src="js/lightGallery.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#lightGallery").lightGallery({
+				mode: "fade",
+				speed: 800,
+				caption: true,
+				desc: true,
+				mobileSrc: true
+			});
+		});
+	</script>
+
+	<script src="js/owl.carousel.js"></script>
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
+	<script>
+		$(document).ready(function () {
+			$("#owl-demo").owlCarousel({
+
+				autoPlay: 3000, //Set AutoPlay to 3 seconds
+				autoPlay: true,
+				navigation: true,
+
+				items: 4,
+				itemsDesktop: [640, 5],
+				itemsDesktopSmall: [414, 4]
+
+			});
+
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<!-- //js -->
+	<script src="js/bootstrap.js"></script>
+	<!-- //for bootstrap working -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	
+
+	window.smoothScroll = function(target) {
+		var scrollContainer = target;
+		do { //find scroll container
+			scrollContainer = scrollContainer.parentNode;
+			if (!scrollContainer) return;
+			scrollContainer.scrollTop += 1;
+		} while (scrollContainer.scrollTop == 0);
+	
+		var targetY = 0;
+		do { //find the top of target relatively to the container
+			if (target == scrollContainer) break;
+			targetY += target.offsetTop;
+		} while (target = target.offsetParent);
+	
+		scroll = function(c, a, b, i) {
+			i++; if (i > 30) return;
+			c.scrollTop = a + (b - a) / 30 * i;
+			setTimeout(function(){ scroll(c, a, b, i); }, 20);
+		}
+		// start scrolling
+		scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+	}
+</script>
+	<!-- //here ends scrolling icon -->
+</body>
+
+</html>
