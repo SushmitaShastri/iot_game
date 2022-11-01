@@ -657,7 +657,7 @@ But, OOPS! Street lamps code is not there! Can you add it pls?</b>
 						<div class="slider-info">
 							<h4>IOT Gamification </h4>
 							<p>Play With Components </p>
-							<a href="#about" class="hvr-shutter-in-horizontal scroll">Ready to Play</a>
+							<a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" class="hvr-shutter-in-horizontal scroll">Ready to Play</a>
 						</div>
 					</li>
 					<li>
@@ -668,7 +668,7 @@ But, OOPS! Street lamps code is not there! Can you add it pls?</b>
 
 							<h4>IOT Gamification</h4>
 							<p>Beginning of Machine Taking Over the World </p>
-							<a href="#about" class="hvr-shutter-in-horizontal scroll">Ready to Play</a>
+							<a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" class="hvr-shutter-in-horizontal scroll">Ready to Play</a>
 						</div>
 					</li>
 					<li>
@@ -679,7 +679,7 @@ But, OOPS! Street lamps code is not there! Can you add it pls?</b>
 
 							<h4>IOT Gamification</h4>
 							<p>Learning is Fun</p>
-							<a href="#about" class="hvr-shutter-in-horizontal scroll">Ready to Play</a>
+							<a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" class="hvr-shutter-in-horizontal scroll">Ready to Play</a>
 						</div>
 					</li>
 				</ul>
@@ -689,7 +689,30 @@ But, OOPS! Street lamps code is not there! Can you add it pls?</b>
 		</div>
 		<!--//Slider-->
 	</div>
-
+	<!--user manual model-->
+	<div class="modal" id="myModal">
+		<div class="modal-dialog ">
+			<div class="modal-content">
+				<div class="modal-header">
+				   <h4 class="modal-title">Instructions</h4>
+				</div>
+			   <div class="modal-body">
+			 <p>Modal body text goes here.</p>
+			   </div>
+				<div class="modal-footer">
+				<a href="#services" class="btn btn-primary" onclick="hide()">Close</a>
+			   </div>
+			</div>
+	   </div>
+	 </div>
+	 <script>
+		function hide(){
+			document.getElementById("myModal").style.display="none";
+			document.getElementById("myModal").classList.remove("in");
+			document.body.classList.remove("modal-open");
+			document.getElementsByClassName("modal-backdrop")[0].removeAttribute("class")
+		}
+	 </script>
 	<!-- about -->
 	<div class="about" id="about">
 		<div class="container">
