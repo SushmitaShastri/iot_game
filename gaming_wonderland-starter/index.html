@@ -7,7 +7,7 @@
 	<meta http-equiv='expires' content='0'>
 	<meta http-equiv='pragma' content='no-cache'>
 	<script type="application/x-javascript">
-	document.addEventListener('contextmenu', event => event.preventDefault());
+	//document.addEventListener('contextmenu', event => event.preventDefault());
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
 		}, false);
@@ -34,6 +34,12 @@
 					document.getElementById("div1").classList.remove("disabled");
 					document.getElementById("btn11").disabled = false;
 					
+					document.getElementById("l1game1").style.display="none";
+					document.getElementById("l1game1").classList.remove("in");
+					document.body.classList.remove("modal-open");
+					document.getElementsByClassName("modal-backdrop")[0].removeAttribute("class");
+					document.querySelector("button#btn11").click();
+
 				}
 				else
 				{
@@ -50,6 +56,12 @@
 					document.getElementById("btn12").classList.remove("disabled");
 					document.getElementById("div2").classList.remove("disabled");
 					document.getElementById("btn12").disabled = false;
+					
+					document.getElementById("l1game2").style.display="none";
+					document.getElementById("l1game2").classList.remove("in");
+					document.body.classList.remove("modal-open");
+					document.getElementsByClassName("modal-backdrop")[0].removeAttribute("class");
+					document.querySelector("button#btn12").click();
 				}
 				else
 				{
@@ -66,6 +78,12 @@
 					document.getElementById("btn13").classList.remove("disabled");
 					document.getElementById("div3").classList.remove("disabled");
 					document.getElementById("btn13").disabled = false;
+					
+					document.getElementById("l1game3").style.display="none";
+					document.getElementById("l1game3").classList.remove("in");
+					document.body.classList.remove("modal-open");
+					document.getElementsByClassName("modal-backdrop")[0].removeAttribute("class");
+					document.querySelector("button#btn13").click();
 				}
 				else
 				{
@@ -82,6 +100,12 @@
 					document.getElementById("btn14").classList.remove("disabled");
 					document.getElementById("div4").classList.remove("disabled");
 					document.getElementById("btn14").disabled = false;
+					
+					document.getElementById("l1game4").style.display="none";
+					document.getElementById("l1game4").classList.remove("in");
+					document.body.classList.remove("modal-open");
+					document.getElementsByClassName("modal-backdrop")[0].removeAttribute("class");
+					document.querySelector("button#btn14").click();
 				}
 				else
 				{
@@ -91,13 +115,19 @@
 			}
 			else if(type==15)
 			{
-				if(ans=="68GPIO16" || ans=="68gpio16")
+				if(ans=="58GPIO16" || ans=="58gpio16")
 				{
 					document.getElementById('resultError15').innerHTML='';
 					document.getElementById('result15').innerHTML="Correct!Proceed to the next game!";
 					document.getElementById("btn21").classList.remove("disabled");
 					document.getElementById("div21").classList.remove("disabled");
 					document.getElementById("btn21").disabled = false;
+					
+					document.getElementById("l1game5").style.display="none";
+					document.getElementById("l1game5").classList.remove("in");
+					document.body.classList.remove("modal-open");
+					document.getElementsByClassName("modal-backdrop")[0].removeAttribute("class");
+					document.querySelector("button#btn21").click();
 				}
 				else
 				{
@@ -114,6 +144,12 @@
 					document.getElementById("btn22").classList.remove("disabled");
 					document.getElementById("div22").classList.remove("disabled");
 					document.getElementById("btn22").disabled = false;
+					
+					document.getElementById("l1game21").style.display="none";
+					document.getElementById("l1game21").classList.remove("in");
+					document.body.classList.remove("modal-open");
+					document.getElementsByClassName("modal-backdrop")[0].removeAttribute("class");
+					document.querySelector("button#btn22").click();
 				}
 				else
 				{
@@ -133,10 +169,15 @@
 					{
 						document.getElementById('resultError22').innerHTML='';
 						document.getElementById('result22').innerHTML="Correct!!";
-							
 						document.getElementById("btn23").classList.remove("disabled");
 						document.getElementById("div23").classList.remove("disabled");
 						document.getElementById("btn23").disabled = false;
+						
+						document.getElementById("l1game22").style.display="none";
+						document.getElementById("l1game22").classList.remove("in");
+						document.body.classList.remove("modal-open");
+						document.getElementsByClassName("modal-backdrop")[0].removeAttribute("class");
+						document.querySelector("button#btn23").click();
 					}
 					else
 					{
@@ -157,10 +198,16 @@
 				{
 					document.getElementById('resultError23').innerHTML='';
 					document.getElementById('result23').innerHTML="Correct!Now try geussing below";
-
 					document.getElementById("btn24").classList.remove("disabled");
 					document.getElementById("div24").classList.remove("disabled");
 					document.getElementById("btn24").disabled = false;
+				
+					document.getElementById("l1game23").style.display="none";
+					document.getElementById("l1game23").classList.remove("in");
+					document.body.classList.remove("modal-open");
+					document.getElementsByClassName("modal-backdrop")[0].removeAttribute("class");
+					document.querySelector("button#btn24").click();	
+					
 				}
 				else
 				{
@@ -177,6 +224,12 @@
 					document.getElementById("btn25").classList.remove("disabled");
 					document.getElementById("div25").classList.remove("disabled");
 					document.getElementById("btn25").disabled = false;
+					
+					document.getElementById("l1game24").style.display="none";
+					document.getElementById("l1game24").classList.remove("in");
+					document.body.classList.remove("modal-open");
+					document.getElementsByClassName("modal-backdrop")[0].removeAttribute("class");
+					document.querySelector("button#btn25").click();
 				}
 				else
 				{
@@ -193,6 +246,12 @@
 					document.getElementById("btn31").classList.remove("disabled");
 					document.getElementById("div31").classList.remove("disabled");
 					document.getElementById("btn31").disabled = false;
+					
+					document.getElementById("l1game25").style.display="none";
+					document.getElementById("l1game25").classList.remove("in");
+					document.body.classList.remove("modal-open");
+					document.getElementsByClassName("modal-backdrop")[0].removeAttribute("class");
+					document.querySelector("button#btn31").click();
 				}
 				else
 				{
@@ -209,6 +268,12 @@
 					document.getElementById("btn32").classList.remove("disabled");
 					document.getElementById("div32").classList.remove("disabled");
 					document.getElementById("btn32").disabled = false;
+					
+					document.getElementById("l1game31").style.display="none";
+					document.getElementById("l1game31").classList.remove("in");
+					document.body.classList.remove("modal-open");
+					document.getElementsByClassName("modal-backdrop")[0].removeAttribute("class");
+					document.querySelector("button#btn32").click();
 				}
 				else
 				{
@@ -275,7 +340,7 @@
       	 <span style="color:red" id="resultError11"></span>
         <p><b>Device that converts energy into motion ________</b></p><br>
         <input type="text" name="l1g1" id="l1g1">
-	      <br><br><small><b>Struggling a bit? Click here!<a href="https://iot-wall-site.onrender.com/IoT_webProject/index.html#iot_components" target="_blank">HINT</a></b></small>
+        	      <br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/index.html#iot_components" target="_blank">HINT</a></b></small>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-success" onclick="submitData(11,document.getElementById('l1g1').value)">Submit</button>
@@ -300,6 +365,7 @@
         <p><b>An ac is capable of turning on by itself when it's a hot day, it
 is using temperature ______.</b></p><br>
         <input type="text" name="l1g2" id="l1g2">
+        <br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/index.html#iot_components" target="_blank">HINT</a></b></small>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-success" onclick="submitData(12,document.getElementById('l1g2').value)">Submit</button>
@@ -316,7 +382,7 @@ is using temperature ______.</b></p><br>
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Level1 - game4</h4>
+        <h4 class="modal-title">Level1 - game3</h4>
       </div>
       <div class="modal-body">
       	 <span style="color:green" id="result13"></span>
@@ -328,6 +394,7 @@ is using temperature ______.</b></p><br>
 	d. Raspberry pi</b></p><br>
 	Input any of the option name (a,b,c or d)
         <input type="text" name="l1g3" id="l1g3">
+        <br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/index.html#developmentBoard" target="_blank">HINT</a></b></small>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-success" onclick="submitData(13,document.getElementById('l1g3').value)">Submit</button>
@@ -351,6 +418,7 @@ is using temperature ______.</b></p><br>
       	 <span style="color:red" id="resultError14"></span>
         <p><b>Which development board needs wifi to run?
         <input type="text" name="l1g4" id="l1g4">
+        <br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/index.html#developmentBoard" target="_blank">HINT</a></b></small>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-success" onclick="submitData(14,document.getElementById('l1g4').value)">Submit</button>
@@ -375,6 +443,7 @@ is using temperature ______.</b></p><br>
         <p><b>Guess the answer to enter the next level:
 Format: Number of analog pins in arduino+ Number of ground pins in raspberry + name of last GPIO pin(which has maximum gpio number) in NodeMCU ESP8266.</b></p><br>
         <input type="text" name="l1g5" id="l1g5">
+        <br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/index.html#developmentBoard" target="_blank">HINT</a></b></small>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-success" onclick="submitData(15,document.getElementById('l1g5').value)">Submit</button>
@@ -402,6 +471,7 @@ Format: Number of analog pins in arduino+ Number of ground pins in raspberry + n
         <p><b>Turn on the given led using any of your favorite development board.
 Blink the led with 1000ms delay. Count the number of blinks and enter.</b></p><br>
         <input type="text" name="l2g1" id="l2g1">
+        <br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/led.html" target="_blank">HINT</a></b></small>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-success" onclick="submitData(21,document.getElementById('l2g1').value)">Submit</button>
@@ -430,7 +500,8 @@ Suppose we've to design a car which stops when some other object is very close t
         Reverse the answer you've got, you'll find a file with the same name.
 Open the file, run the code with same pin configuration.
 When object is detected within mentioned distance which led is glowing?
-	<input type="text" name="l2g2b" id="l2g2b"><br>
+	<input type="text" name="l2g2b" id="l2g2b">
+	<br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/ultrasonicsensor.html" target="_blank">HINT</a></b></small>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-success" onclick="submitData(22,document.getElementById('l2g2').value)">Submit</button>
@@ -458,6 +529,7 @@ If you want to build a smart city smart like you, to save electricity with the s
         <b>Yo! Now take the next alphabet of each letters to know the file name.
         Do the connection and run the code.<br>
 But, OOPS! Street lamps code is not there! Can you add it pls?</b>
+	<br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/ldr.html" target="_blank">HINT</a></b></small>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-success" onclick="submitData(23,document.getElementById('l2g3').value)">Submit</button>
@@ -484,6 +556,7 @@ But, OOPS! Street lamps code is not there! Can you add it pls?</b>
  uses radioation to detect someone's presence within specified distance. Check for the file with the country name beginning with the
  sensor name.</b></p><br>
         <input type="text" name="l2g4" id="l2g4">
+        <br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/infraredsensor.html" target="_blank">HINT</a></b></small>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-success" onclick="submitData(24,document.getElementById('l2g4').value)">Submit</button>
@@ -508,6 +581,7 @@ But, OOPS! Street lamps code is not there! Can you add it pls?</b>
         <p><b>You are so close to build the smart city! You should be elected as president!
  I've something to tell you.. You can read it in the display, file name would be same as the device name.</b></p><br>
         <input type="text" name="l2g5" id="l2g5">
+        <br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/oled.html" target="_blank">HINT</a></b></small>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-success" onclick="submitData(25,document.getElementById('l2g5').value)">Submit</button>
@@ -531,9 +605,10 @@ But, OOPS! Street lamps code is not there! Can you add it pls?</b>
       <div class="modal-body">
       	 <span style="color:green" id="result31"></span>
       	 <span style="color:red" id="resultError31"></span>
-        <p><b>Build a system with potentiometer and led, intensity of LED should vary based on the input by potentiometer.<br>
+        <p><b>Build traffic signal pole, at first red light should be turned on. After a specific time yellow, then green.<br>
         Could you complete?</b></p><br>
         <input type="text" name="l3g1" id="l3g1">
+        <br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/led.html" target="_blank">HINT</a></b></small>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-success" onclick="submitData(31,document.getElementById('l3g1').value)">Submit</button>
@@ -555,8 +630,10 @@ But, OOPS! Street lamps code is not there! Can you add it pls?</b>
       <div class="modal-body">
       	 <span style="color:green" id="result32"></span>
       	 <span style="color:red" id="resultError32"></span>
-        <p><b>Build a system with combination of button and servometer. When button is pressed servometer should turn on and visa versa.</b><br>Could you complete?</p><br>
+        <p><b>Imagine you need to pull water from a well, you need some rotating component to make it work.<br>
+        Keep this scenario in mind and make a prototype of it.</b></p><br>
         <input type="text" name="l3g2" id="l3g2">
+        <br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/servomotor.html" target="_blank">HINT</a></b></small>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-success" onclick="submitData(32,document.getElementById('l3g2').value)">Submit</button>
