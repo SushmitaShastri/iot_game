@@ -261,7 +261,7 @@
 			}
 			else if(type==31)
 			{
-				if(ans.toLowerCase()=="yes")
+				if(ans.toLowerCase()=="delay" or ans.toLowerCase()=="sleep")
 				{
 					document.getElementById('resultError31').innerHTML='';
 					document.getElementById('result31').innerHTML="You're almost there!";
@@ -283,7 +283,7 @@
 			}
 			else if(type==32)
 			{
-				if(ans.toLowerCase()=="yes")
+				if(ans.toLowerCase()=="write")
 				{
 					document.getElementById('resultError32').innerHTML='';
 					document.getElementById('result32').innerHTML="Hurray! You did it!<br>You've succesfully completed the game! Continue to play with IoT! Byee!";
@@ -606,7 +606,7 @@ But, OOPS! Street lamps code is not there! Can you add it pls?</b>
       	 <span style="color:green" id="result31"></span>
       	 <span style="color:red" id="resultError31"></span>
         <p><b>Build traffic signal pole, at first red light should be turned on. After a specific time yellow, then green.<br>
-        Could you complete?</b></p><br>
+        Which function did you use to keep the light on for certain time?</b></p><br>
         <input type="text" name="l3g1" id="l3g1">
         <br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/led.html" target="_blank">HINT</a></b></small>
       </div>
@@ -631,7 +631,8 @@ But, OOPS! Street lamps code is not there! Can you add it pls?</b>
       	 <span style="color:green" id="result32"></span>
       	 <span style="color:red" id="resultError32"></span>
         <p><b>Imagine you need to pull water from a well, you need some rotating component to make it work.<br>
-        Keep this scenario in mind and make a prototype of it.</b></p><br>
+        Keep this scenario in mind and make a prototype of it.<br>
+		Which function is used to assign position to the servomotor shaft?</b></p><br>
         <input type="text" name="l3g2" id="l3g2">
         <br><br><small><b>Struggling a bit? Click here!&nbsp;<a href="https://iot-wall-site.onrender.com/IoT_webProject/servomotor.html" target="_blank">HINT</a></b></small>
       </div>
